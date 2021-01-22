@@ -24,6 +24,7 @@ typedef coltyp* colptr;
 coltyp base;
 colptr head = &base;
 String msg  = "What color do you want to access?";
+String msg0 = "0. None";
 String msgg = "What RGB value do you want to Change? Red, Green or Blue?";
 String msg1 = "Do you want to save this colour?";
 String msg2 = "What is the name of this colour?";
@@ -64,6 +65,7 @@ void loop() {
   
   Serial.println(msg);
   colptr iter = head;
+  Serial.println(msg0);
   while(iter != NULL){
     Serial.print(j);
     Serial.print(F(". "));
